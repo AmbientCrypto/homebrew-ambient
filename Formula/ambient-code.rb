@@ -1,8 +1,8 @@
 class AmbientCode < Formula
   desc "Terminal coding agent for the Ambient network"
   homepage "https://github.com/AmbientCrypto/ambient-cli"
-  url "https://github.com/AmbientCrypto/ambient-cli/releases/download/v1.0.1/ambient-code-1.0.1.tgz"
-  sha256 "4a67e7d86817fd073192cf103cf98451cb82a21acdb796de534c099ef2b64851"
+  url "https://github.com/AmbientCrypto/ambient-cli/releases/download/v1.0.2/ambient-code-1.0.2.tgz"
+  sha256 "e9f5a872a4550f0d94599c5bbb704683df548b27eb66f3d4c3b9fc9ff3e2c519"
   license "MIT"
 
   depends_on "node"
