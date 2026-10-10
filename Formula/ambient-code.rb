@@ -1,8 +1,9 @@
 class AmbientCode < Formula
   desc "Terminal coding agent for the Ambient network"
   homepage "https://github.com/AmbientCrypto/ambient-cli"
-  url "https://github.com/AmbientCrypto/ambient-cli/releases/download/v1.0.3/ambient-code-1.0.3.tgz"
-  sha256 "b6b09202f112f85f762da44c59a2a335b1030b33d6071f06cbd1b682bb75b416"
+  url "https://github.com/AmbientCrypto/ambient-cli/releases/download/v1.0.4/ambient-code-1.0.4.tgz"
+  version "1.0.4"
+  sha256 "1ddca384c85a29b4efa6cc077749ef74b4e0c7c8edc2613156a613c1a344568b"
   license "MIT"
 
   depends_on "node"
@@ -13,6 +14,7 @@ class AmbientCode < Formula
   end
 
   test do
-    assert_match "ambient", shell_output("#{bin}/ambient --version")
+    assert_match "ambient 1.0.4", shell_output("#{bin}/ambient --version")
+    assert_match "ink@8.0.0", shell_output("#{bin}/ambient doctor --offline")
   end
 end
